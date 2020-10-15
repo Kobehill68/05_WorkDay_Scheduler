@@ -38,3 +38,4 @@ it will save the event in local storage, when the application launches it will l
 This application needs to run in the browser and will feature dynamically updated HTML and CSS and is powered by jQuery.
 
 The Moment.js library needs to be utilized to display the corect date and time in the browser.
+  
