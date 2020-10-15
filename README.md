@@ -39,3 +39,29 @@ This application needs to run in the browser and will feature dynamically update
 
 The Moment.js library needs to be utilized to display the corect date and time in the browser.
   
+## Solution
+The base HTML was modifed to add "id=main-row" to the container. So this serves as the anchor parent for the dynamic elments in my javascript.
+All of app devolepment was done in javascript utilizing the jQuery to work with the DOM.
+
+### init function
+This sets the correct and current date at the top of the screen. 
+And it calls the makeSchedule and renderSchedule functions.
+
+### makeSchedule function
+This will loop through my businnessHour array for the predefined workday hours.
+It Utilizes jQuery to biuld and define dynamically all the necessary HTML page elments. And it pases the businnessHour array to the 
+renderHourShow function.
+
+### renderHourShow
+
+
+
+
+
+## WorkDay Scheduler
+Here is a image of the live application
+![Workday](./images/Workday.png)
+
+
+## Soruces
+https://momentjs.com/ & https://www.w3schools.com/ & https://stackoverflow.com/
