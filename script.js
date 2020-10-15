@@ -1,4 +1,4 @@
-
+// added the global variables
 var currtentday = moment().format("dddd MMM Do YYYY");
 var currentH24 = moment().format("HH");
 
@@ -20,12 +20,12 @@ function makeSchedule(){
         var hoursToDis = moment(bussinessHour[i], "hh").format("LT")
 
         var hourShow = renderhourShow(hoursIn)
-
+        // making the hmtl elements to show up on the page
         var divR = $("<div>").attr("class", "row time-block");
         var divH = $("<div>").attr("class", "col-1 hour").text(hoursToDis);
         var textArea = $("<textarea>").attr("class", `col-10 testarea descripton ${hourShow}`).attr("id", bussinessHour[i]);
         var saveB = $("<button>").attr("class", "col-1 saveBtn").attr("button-index", bussinessHour[i]);
-
+        // this is were i am appending the html elements to the html page
         $(saveB).append($("<i>").attr("class", "fas fa-save fa-2x"));
         $(divR).append(divH, textArea, saveB);
         $("#main-row").append(divR);
@@ -40,11 +40,11 @@ function renderhourShow(hour){
         hourShow = "past";
     };
 
-    if(hour < currentH24){
+    if(hour === currentH24){
         hourShow = "present";
     };
 
-    if(hour < currentH24){
+    if(hour > currentH24){
         hourShow = "future";
     };
 
