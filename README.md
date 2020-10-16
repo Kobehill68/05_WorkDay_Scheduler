@@ -69,11 +69,14 @@ loop through schedule and will load the DOM elements from the stored schedule.
 
 
 ### theSavedSchedule
-
+Thsi will make a new object with the hour and event. Then it will push the new object to the
+schedule array. 
+And it sets the local storage to the new object.
 
 
 ### .saveBtn
-
+This will get the button-index attr and calls the theSavedSchedule then passing the buttonindex.
+And calls the renderSchedule so it can refresh the DOM.
 
 
 
