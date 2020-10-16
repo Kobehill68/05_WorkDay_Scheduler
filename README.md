@@ -26,6 +26,11 @@ WHEN I refresh the page
 THEN the saved events persist
 ```
 
+## Link to the Live Application 
+Here is a link that will take you to the live application.
+
+https://kobehill68.github.io/05_WorkDay_Scheduler/
+
 ## Project Goal
 The goal for thi sproject was to create a day planner which presents the current workday and the hours in that workday.
 When you open the page, standard business hours will be presented such as 9-5 and the workday will be broken down in to 
@@ -53,7 +58,21 @@ It Utilizes jQuery to biuld and define dynamically all the necessary HTML page e
 renderHourShow function.
 
 ### renderHourShow
+This gets the current businessHour element from the makeSchedule. 
+Then it takes the hour and evaluates it against the moment().format("HH") and sets the hourShow equal to
+.past, .present, or .future.
+Then it Returns hourShow.
 
+### renderSchedule
+This will retrive the schedule from the local storage. Then it see if the schedule is empty and it will 
+loop through schedule and will load the DOM elements from the stored schedule.
+
+
+### theSavedSchedule
+
+
+
+### .saveBtn
 
 
 
